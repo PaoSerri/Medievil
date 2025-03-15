@@ -1,0 +1,218 @@
+/* Sfondo generale del sito */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #444444;  /* Grigio scuro */
+  color: white; /* Testo bianco per leggibilità */
+}
+
+header {
+  background-color: #2c3e50;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-brand {
+    color: #FFD700 !important; /* Giallo dorato */
+}
+
+
+h1 {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;  /* Footer nero */
+  color: white; /* Testo bianco nel footer */
+}
+
+/* Ridimensiona le immagini senza tagliarle */
+.carousel-inner img {
+  width: 100%; /* Imposta la larghezza desiderata (ad esempio, 40%) */
+  max-width: 250px; /* Imposta una larghezza massima (puoi cambiare il valore) */
+  height: auto; /* Mantiene l'aspetto corretto dell'immagine */
+  object-fit: contain; /* Assicura che l'intera immagine sia visibile */
+  margin: 0 auto; /* Centra le immagini */
+}
+
+/* Personalizzare la dimensione delle frecce del carosello */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Colore di sfondo delle freccette (nero) */
+  width: 40px;  /* Modifica la larghezza delle freccette */
+  height: 40px; /* Modifica l'altezza delle freccette */
+  border-radius: 50%; /* Aggiungi un bordo arrotondato alle freccette */
+}
+
+/* Aggiungi un effetto di hover per le freccette */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Cambia il colore dello sfondo quando le freccette sono al passaggio del mouse */
+}
+
+/* Personalizza il carosello per avere spazio per le freccette */
+.carousel {
+  position: relative;
+}
+
+/* Stile per evidenziare la sezione */
+.anteprima-strumenti {
+  background: #2b2b2b; 
+  color: white; /* Testo bianco per contrasto */
+  padding: 50px 0; /* Spazio sopra e sotto */
+}
+
+/* Stile per le card */
+.anteprima-strumenti .card {
+  background: rgba(255, 255, 255, 0.1); /* Sfondo leggermente opaco */
+  border: none;
+  color: white;
+}
+
+/* Stile per i pulsanti */
+.anteprima-strumenti .btn {
+  background: #ffcc00; /* Colore dorato per richiamare il tema medievale */
+  color: black;
+  font-weight: bold;
+}
+
+/* Navbar nera */
+.navbar {
+  background-color: #000000; /* Imposta il colore di sfondo della navbar a nero */
+}
+
+/* Footer nero (combina le regole per il footer) */
+footer {
+  background-color: #000000; /* Imposta il colore di sfondo del footer a nero */
+  color: white; /* Imposta il testo del footer a bianco */
+}
+/*CSS PER PAGINA COLLECTION*/
+/* Stile per le card delle categorie */
+.card {
+    background-color: #333333; /* Grigio scuro per lo sfondo delle card */
+    color: white; /* Testo bianco */
+    border: none; /* Rimuove il bordo delle card */
+    margin-bottom: 20px; /* Aggiunge uno spazio tra le card */
+}
+
+/* Colore del bottone "Esplora" */
+.card .btn {
+    background-color: #ffcc00; /* Colore dorato per il bottone */
+    color: black; /* Colore del testo nel bottone */
+    font-weight: bold; /* Rende il testo nel bottone più spesso */
+}
+
+/* Hover sul bottone "Esplora" */
+.card .btn:hover {
+    background-color: #e0b800; /* Colore più scuro del bottone al passaggio del mouse */
+}
+
+/* Stile per il contenuto delle card */
+.card-img-top {
+    max-height: 250px;
+    object-fit: cover; /* Mantiene le immagini proporzionate */
+}
+
+/* Stile per la sezione */
+.card-body {
+    padding: 15px; /* Aggiungi padding per il contenuto */
+}
+/*CSS PER LE PAGINE DELLE CATEGORIE */
+/* Stile per le card delle miniature */
+.card {
+    background-color: #333333; /* Grigio scuro per lo sfondo delle card */
+    color: white; /* Testo bianco */
+    border: none; /* Rimuove il bordo delle card */
+    margin-bottom: 20px; /* Aggiunge uno spazio tra le card */
+}
+
+/* Colore del bottone "Scopri di più" */
+.card .btn {
+    background-color: #ffcc00; /* Colore dorato per il bottone */
+    color: black; /* Colore del testo nel bottone */
+    font-weight: bold; /* Rende il testo nel bottone più spesso */
+}
+
+/* Hover sul bottone "Scopri di più" */
+.card .btn:hover {
+    background-color: #e0b800; /* Colore più scuro del bottone al passaggio del mouse */
+}
+
+/* Stile per il contenuto delle card */
+.card-img-top {
+    max-height: 250px;
+    object-fit: cover; /* Mantiene le immagini proporzionate */
+}
+
+/* Stile per la sezione */
+.card-body {
+    padding: 15px; /* Aggiungi padding per il contenuto */
+}
+
+/* Intestazione con sfondo grigio scuro */
+header {
+    background-color: #222222; /* Imposta il grigio scuro */
+    color: white; /* Colore del testo bianco */
+    padding: 40px 20px; /* Aggiungi padding per distanza */
+}
+
+/* Stile per i bottoni di paginazione */
+.pagination .page-item .page-link {
+    background-color: #333; /* Grigio scuro */
+    color: white; /* Testo bianco */
+    border: 1px solid #555; /* Bordo leggermente più chiaro */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #555; /* Grigio leggermente più chiaro per l'attivo */
+    border-color: #777; /* Bordo più chiaro */
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #444; /* Grigio più scuro al passaggio del mouse */
+    color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #222; /* Grigio molto scuro per il disabilitato */
+    color: #777; /* Testo più chiaro */
+    border-color: #444;
+    cursor: not-allowed;
+}
+
+/* Link nel footer */
+footer a {
+    color: white !important; /* Testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Aggiunge sottolineatura solo al passaggio del mouse */
+}
+
+/*Colore giallo oro dei titoli delle sezioni metadati e descrizione*/
+.card h3 {
+    color: #FFD700;
+    font-weight: bold;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project Plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- Navbar con Bootstrap -->
+	<nav class="navbar navbar-expand-lg navbar-dark dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Collezione Medievale</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">⌂ Home</a>
+                </li>
+                <!-- CATEGORIE con MENU A TENDINA -->
+                <li class="nav-item dropdown">
+                	<a class="nav-link" href="collection.html">≡ Catalogo</a>	
+				</li>
+                <!-- STRUMENTI con MENU A TENDINA -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="strumentiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ⏚ Strumenti
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="strumentiDropdown">
+                        <li><a class="dropdown-item" href="mappa.html">Mappa Interattiva</a></li>
+                        <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+				 	<a class="nav-link" href="#">✉ Dati e Risorse</a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#">ℹ Info</a>
+                </li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+	<!-- Contenuto della pagina -->
+	<div class="container my-5">
+		<h1 class="text-center text-warning">📄 Web Project Plan</h1>
+	
+		<p class="text-center">Qui puoi visualizzare il documento del Web Project Plan.</p>
+	
+		<!-- Visualizzatore PDF -->
+		<div class="text-center">
+			<iframe src="altro/progetto/WebProjectPlan.pdf" width="100%" height="600px"></iframe>
+		</div>
+	
+		<p class="text-center mt-3">
+			<a href="docs/WebProjectPlan.pdf" class="btn btn-warning" download>📥 Scarica il Web Project Plan</a>
+		</p>
+	</div>
+
+	<!-- Footer con bootsrap-->
+	<footer class="text-center mt-4 p-3 dark text-white">
+	<div>
+      <p><a href="#" title="Info">Info</a>  |  <a href="#" title="Contatti">Contatti</a> | <a href="#" title="Licenze">Licenze</a> | <a href="web_project_plan.html" title="WPP">Web Project Plan</a></p>
+    </div>
+		&copy; Copyright(c) 2025 - Museo Virtuale di arte medievale
+	</footer>
+	
+	<!-- Bootstrap Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizzato -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
