@@ -48,14 +48,14 @@ footer {
 
 /* Ridimensiona le immagini senza tagliarle */
 .carousel-inner img {
-  width: 100%; /* Imposta la larghezza desiderata (ad esempio, 40%) */
+  width: 100%; /* Imposta la larghezza desiderata */
   max-width: 250px; /* Imposta una larghezza massima (puoi cambiare il valore) */
   height: auto; /* Mantiene l'aspetto corretto dell'immagine */
   object-fit: contain; /* Assicura che l'intera immagine sia visibile */
   margin: 0 auto; /* Centra le immagini */
 }
 
-/* Personalizzare la dimensione delle frecce del carosello */
+/* Personalizzazione della dimensione delle frecce del carosello */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #000; /* Colore di sfondo delle freccette (nero) */
@@ -64,7 +64,7 @@ footer {
   border-radius: 50%; /* Aggiungi un bordo arrotondato alle freccette */
 }
 
-/* Aggiungi un effetto di hover per le freccette */
+/* Aggiunge un effetto di hover per le freccette */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: rgba(0, 0, 0, 0.7); /* Cambia il colore dello sfondo quando le freccette sono al passaggio del mouse */
@@ -106,6 +106,7 @@ footer {
   background-color: #000000; /* Imposta il colore di sfondo del footer a nero */
   color: white; /* Imposta il testo del footer a bianco */
 }
+
 /*CSS PER PAGINA COLLECTION*/
 /* Stile per le card delle categorie */
 .card {
