@@ -1,34 +1,29 @@
+// Attivo i Tooltp di bootstrap 
 document.addEventListener("DOMContentLoaded", function () {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    // Dopo aver caricato il documento
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')); //Seleziono tutti gli elem. con attrib = data-bs-toggle="tooltip
+    //per ciascun elemento creo istanza e lo rendo attivo
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
     console.log("Bootstrap tooltips attivati!");
 });
-document.addEventListener("DOMContentLoaded", function () {
-    var dropdown = document.querySelector(".dropdown");
-    dropdown.addEventListener("mouseover", function () {
-        var menu = dropdown.querySelector(".dropdown-menu");
-        menu.classList.add("show");
-    });
-    dropdown.addEventListener("mouseleave", function () {
-        var menu = dropdown.querySelector(".dropdown-menu");
-        menu.classList.remove("show");
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    var dropdowns = document.querySelectorAll(".dropdown");
 
+// Gestione dei menu a discesa
+document.addEventListener("DOMContentLoaded", function () {
+    var dropdowns = document.querySelectorAll(".dropdown");//salvo tutti gli elementi .dropdown
+    //ciclo per applicare l'evento a tutti gli elementi
     dropdowns.forEach(function (dropdown) {
+        //ogni volta che mouseover il menu a discesa diventa visibile
         dropdown.addEventListener("mouseover", function () {
             var menu = dropdown.querySelector(".dropdown-menu");
-            menu.classList.add("show");
+            menu.classList.add("show");//rendo visibile il menu
         });
-
+        //quando mouse non è più sopra scompare
         dropdown.addEventListener("mouseleave", function () {
             var menu = dropdown.querySelector(".dropdown-menu");
-            menu.classList.remove("show");
+            menu.classList.remove("show");//menu non più visibile
         });
     });
 });
