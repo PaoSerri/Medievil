@@ -29,33 +29,42 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Funzione di ricerca
+    // Funzione per la ricerca
+    //Implementazione di ricerca dinamica per filtrare gli elementi in base a quello che l'utente digita
     document.getElementById("searchInput").addEventListener("keyup", function() {
+        //prendo valore scritto in input
+        //trasformo i caratteri tutti in minuscolo
         let searchValue = this.value.toLowerCase();
+        //salvo gli elementi presenti
         let items = document.querySelectorAll(".miniature");
-
+        //ciclo per ogni elemento presente
         items.forEach(function(item) {
+            //Prendo il titolo e la descrizione dalla card dell'elemento
             let title = item.querySelector(".card-title").textContent.toLowerCase();
             let description = item.querySelector(".card-text").textContent.toLowerCase();
-
+            //Controllo se il valore cercato è contenuto nel titolo o descrizione dell'elemento caricato nel sito 
             if (title.includes(searchValue) || description.includes(searchValue)) {
-                item.style.display = "block";
+                item.style.display = "block";//se trovo valore, elemento rimane visibile
             } else {
-                item.style.display = "none";
+                item.style.display = "none";//non trovo valore, elemento viene nascosto
             }
         });
     });
 
     // Funzione di filtro per categoria
+    //Filto gli elementi in base alla categoria selezionata 
     document.getElementById("filterSelect").addEventListener("change", function() {
-        let category = this.value;
-        let items = document.querySelectorAll(".miniature");
-
+        //Dopo che utente selezione opzione da menu a discesa: filterSelect
+        let category = this.value;//Assegno alla variabile la categoria selezionata
+        let items = document.querySelectorAll(".miniature");//Salvo tutti gli elementi in items
+        //ciclo per ogni elemetno
         items.forEach(function(item) {
+            //Se la categoria è all mostro tutti elementi
+            //O se elemento ha data-category = categoria selezionata lo mostro
             if (category === "all" || item.getAttribute("data-category") === category) {
-                item.style.display = "block";
+                item.style.display = "block";//mostro elemento (rimane a schermo)
             } else {
-                item.style.display = "none";
+                item.style.display = "none";//altrimenti lo nascondo
             }
         });
     });
